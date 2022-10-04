@@ -1,0 +1,46 @@
+textarea {
+    outline: none;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+    padding: 5px;
+    box-shadow: rgb(221 221 221) 0px 0px 5px;
+    overflow: auto;
+    width: 50%;
+    resize: none;
+    margin: 0 0 10px 0;
+    color: #313949;
+}
+
+.formatBtn:hover {
+    background-color: rgb(199, 39, 47, 0.85);
+}
+
+.formatBtn {
+    outline: none;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgb(48 48 48 / 30%), 0 1px 3px 1px rgb(48 48 48 / 15%);
+    background: #ddd;
+    padding: 5px 24px;
+    background: rgb(199, 39, 47);
+    border-radius: 3px;
+    color: #f2f2f2;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.sqlFormatterHeaderContainer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sqlFormatterTitle{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: 600;
+    color: #c7272e;
+    margin-bottom: 20px;
+}
