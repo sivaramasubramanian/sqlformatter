@@ -1,19 +1,48 @@
-textarea {
+.mainContainer {
+    padding: 1em;
+}
+
+.sqlFormatterTitle {
+    text-align: center;
+    font-size: 3em;
+    font-family: monospace;
+    font-weight: 600;
+    color: #c7272e;
+    margin-bottom: 1em;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.sqlInputContainer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 2em;
+    padding-left: 1em;
+}
+
+.sqlInputBox {
     outline: none;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 6px;
-    padding: 5px;
     box-shadow: rgb(221 221 221) 0px 0px 5px;
-    overflow: auto;
-    width: 50%;
-    resize: none;
+
+    padding: 5px;
     margin: 0 0 10px 0;
+
+    overflow: auto;
+    resize: none;
+
     color: #313949;
+    width: 100%;
+    min-height: 20rem;
 }
 
-.formatBtn:hover {
-    background-color: rgb(199, 39, 47, 0.85);
-}
 
 .formatBtn {
     outline: none;
@@ -26,21 +55,14 @@ textarea {
     color: #f2f2f2;
     cursor: pointer;
     font-size: 14px;
+    margin: 0.5em;
 }
 
-.sqlFormatterHeaderContainer {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
+.formatBtn:hover {
+    background-color: rgb(199, 39, 47, 0.85);
 }
 
-.sqlFormatterTitle{
-    padding: 10px;
-    text-align: center;
-    font-size: 30px;
-    font-family: monospace;
-    font-weight: 600;
-    color: #c7272e;
-    margin-bottom: 20px;
+.formatterOptionsContainer {
+    /* background-color: blue; */
+    /* width: 100%; */
 }

@@ -3,16 +3,28 @@
 
 <head>
     <meta charset="utf-8" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
 </head>
 
 <body>
-    <div class="sqlFormatterTitle">
-        SQL Formatter
-    </div>
-    <div class="sqlFormatterHeaderContainer">
-        <textarea id="input" rows="20"></textarea>
-        <input type="button" class="formatBtn" value="Format" id="formatButton"/>
+    <div class="mainContainer">
+
+        <div class="sqlFormatterTitle">
+            SQL Formatter
+        </div>
+        <div class="contentContainer">
+
+            <div class="sqlInputContainer">
+                <div contenteditable="true"  id="input" class="sqlInputBox"></div>
+                <input type="button" class="formatBtn" value="Format" id="formatButton" />
+            </div>
+            <div class="formatterOptionsContainer">
+                <pre id="formatterOptionsContainer">
+                </pre>
+            </div>
+        </div>
     </div>
 </body>
 
